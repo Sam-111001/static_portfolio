@@ -1,6 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap");
 @import "tailwindcss";
 
+@layer components {
+  .scroll_item {
+    transition: transform 0.3s ease-out;
+  }
+
+  .scroll_item:hover {
+    transform: scale(2);
+  }
+
+  .scroll_item:hover + .scroll_item {
+    transform: translateX(4vw);
+  }
+
+  .scroll_item:hover ~ .scroll_item {
+    transform: translateX(3vw);
+  }
+
+  .scroll_item:has(+ .scroll_item:hover) {
+    transform: translateX(-4vw);
+  }
+
+  .scroll_item:has(~ .scroll_item:hover) {
+    transform: translateX(-3vw);
+  }
+}
+
 @theme {
   --color-deepBlue: #0d1117;
   --color-darkBlueGrey: #161b22;
@@ -13,6 +39,16 @@
   --font-satisfy: "Satisfy", "cursive";
   --font-poppins: "Poppins", "sans-serif";
   --font-montserrat: "Montserrat", "sans-serif";
+
+  --animate-intifiteScroll: infiniteScroll 15s linear infinite;
+  @keyframes infiniteScroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
 }
 
 body {
