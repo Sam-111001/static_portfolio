@@ -3,7 +3,7 @@
 
 @layer components {
   .scroll_item {
-    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-in-out;
   }
 
   .scroll_item:hover {

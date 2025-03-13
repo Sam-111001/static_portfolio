@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
     return (
-        <header className="  bg-darkBlueGrey">
+        <header className=" bg-darkBlueGrey snap-start">
             <div className=" flex max-w-6xl justify-between items-center mx-auto p-4">
                 <Link to="/">
                     <h1 className=" text-softWhite text-3xl font-satisfy">shamantMyageri</h1>

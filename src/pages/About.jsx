@@ -2,8 +2,8 @@ import Skills from "../components/Skills";
 
 export default function About() {
     return (
-        <div className=" text-softWhite flex flex-col justify-center items-center">
-            <div className="h-screen w-full max-w-6xl flex justify-between mx-auto items-center px-4">
+        <div className=" text-softWhite flex flex-col items-center ">
+            <div className=" min-h-screen w-full max-w-6xl flex justify-between mx-auto items-center px-4 snap-start">
                 <div className=" font-montserrat">
                     <h1 className=" font-poppins font-light text-[1.375rem] my-2">
                         more about me
@@ -25,7 +25,7 @@ export default function About() {
                     image
                 </div>
             </div>
-            <div className=" h-screen w-full max-w-6xl px-4 flex flex-col  justify-center">
+            <div className=" min-h-screen w-full max-w-6xl px-4 flex flex-col  justify-center snap-start">
                 <h2 className=" font-poppins font-light text-[1.375rem] my-14">what I work with?</h2>
                 <Skills />
                 <button className=" 

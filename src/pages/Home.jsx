@@ -1,7 +1,7 @@
 
 export default function Home() {
     return (
-        <div className=" h-screen flex flex-col items-center justify-center">
+        <div className=" h-screen flex flex-col items-center justify-center snap-start">
             <div className=" flex flex-col items-center justify-center text-softWhite font-montserrat">
                 <h2 className=" font-medium text-3xl p-4">Hello, I'm</h2>
                 <h1 className=" font-satisfy text-6xl p-4"><span className=" text-neonPink">Shamant</span> Myageri</h1>
