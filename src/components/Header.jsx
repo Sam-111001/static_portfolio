@@ -11,9 +11,9 @@ export default function Header() {
                     <Link to="/">
                         <li className="  hover:text-neonPink active:text-brightPurple">home</li>
                     </Link>
-                    <a href="/about">
+                    <Link to="/about">
                         <li className=" hover:text-brightPurple active:text-neonYellow">about</li>
-                    </a>
+                    </Link>
                     <Link to="/projects">
                         <li className=" hover:text-neonYellow active:text-electricBlue">projects</li>
                     </Link>
